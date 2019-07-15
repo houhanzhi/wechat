@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.108/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+    #全局配置，如果返回的参数为null,则在返回的json中可将其忽略
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /sell
+
+wechat:
+  mpAppId: wxc85f12962c1f328c
+  mpAppSecret: 4c5fc86abe0eb959418d46eb8ec012a2
